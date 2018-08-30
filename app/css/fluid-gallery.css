@@ -1,0 +1,147 @@
+body {
+    background-color: #ffffff;
+    min-height: 100vh;
+    font: normal 16px sans-serif;
+    padding: 40px 0;
+    padding-bottom: 0;
+}
+
+.container.gallery-container {
+    /*background-color: #f3f3f3;*/
+    color: #ffffff;
+    /*padding:4%;*/
+   /* min-height: 40vh;*/
+    /*padding: 30px 50px;*/
+    font-family: 'EB Garamond', serif;
+	font-size: 20px;
+	width:80%;
+	border-style: double solid;
+	border-width:2px;
+	
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Droid Sans', sans-serif;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    margin: 25px auto;
+    font-size: 18px;
+    color: #999;
+}
+
+.tz-gallery {
+   /* padding-top: 2%;*/
+}
+
+/* Override bootstrap column paddings */
+.tz-gallery .row > div {
+    padding: 2px;
+}
+
+.tz-gallery .lightbox img {
+    width: 100%;
+    border-radius: 0;
+    position: relative;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+}
+
+
+
+/* ---------------- hover ----------------- */
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
+  padding-top:8%;
+  
+  background-color:#f9f9f9;
+  width:100%;
+  height:100%;
+  
+  transition:  opacity .3s ease-in;
+-webkit-transition:  opacity .3s ease-in;
+  
+}
+
+/* .btn {
+  opacity: 0;
+  position: absolute;
+  top: 40%;
+  left: 32%;
+  text-align: center;
+  width:36%;
+  height:20%;
+
+
+} */
+
+
+.img-holder-home:hover .image {
+  opacity: 1;
+  transition: .5s ease;
+}
+
+.img-holder-home:hover .middle {
+  opacity: 0.3;
+ /* 
+  transition-delay: 1s; 
+-webkit-transition-delay: 1s; 
+*/
+}
+
+.img-holder-home:hover .btn{
+  opacity: 0.6;
+}
+
+.img-holder-home:hover {
+  opacity: 1;
+}
+
+.text {
+  /*background-color: #4CAF50;*/
+ /* color: black;*/
+ /* font-size: 12px;*/
+ /* padding: 12px 32px;*/
+}
+
+
+/*.text>h3 {
+	padding-top: 20%;
+}*/
+
+.gallery-info-container{
+	margin-bottom: 2%;
+	font-family: 'EB Garamond', serif;
+	font-size: 20px;
+}
+

@@ -1,0 +1,303 @@
+section.slider {
+    background: #fff;
+    padding: 10px 0px;
+    margin-top: 3%;
+}
+#container {
+	position: relative;
+	overflow: hidden;
+	min-height: 485px;
+}
+#container .slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 500%;
+	height: 100%;
+	animation: animate 10s linear infinite;
+}
+#container .slider .slide {
+	position: relative;
+	width: 20%;
+	height: 100%;
+	float: left;
+}
+#container .slider .slide .caption { 
+	position: absolute;
+	bottom: 60px;
+	right: 60px;
+	left: 60px;
+	padding: 30px;
+	background-color: rgba(0,0,0,.5);
+	box-sizing:border-box;
+	transition: 0.5s;
+}
+#container .slider .slide .caption h2 { 
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 48px;
+	transition: 0.5s;
+}
+#container .slider .slide .caption p { 
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 18px;
+	transition: 0.5s;
+}
+#container .slider .slide.slide1 {
+	background: url(../imgs/header/California_2.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#container .slider .slide.slide2 {
+	background: url(../imgs/header/Serbia_Europe.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#container .slider .slide.slide3 {
+	background: url(../imgs/header/Texas_1.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+#container .slider .slide.slide4 {
+	background: url(../imgs/header/Texas_2.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+
+@keyframes animate {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
+}
+
+.caption h2 { 
+	font-family: 'Poiret One', cursive;
+}
+
+.caption p { 
+	font-family: 'Kanit', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+	#container .slider .slide .caption { 
+		bottom: 20px;
+		right: 20px;
+		left: 20px;
+		padding: 20px;
+	}
+	#container .slider .slide .caption h2 { 
+		margin: 0 0 10px;
+		font-size: 30px;
+	}
+	#container .slider .slide .caption p { 
+		font-size: 16px;
+	}
+	
+	.latest_work .title {
+		font-size: 20px !important;
+	}
+}
+
+/******services*****/
+/* .services {
+	min-height: 430px;
+	padding: 60px 0 100px 0;
+	border-bottom: 5px solid #303030;
+}
+.services .box {
+	height: 300px;
+	cursor: pointer;
+}
+.services .box .content {
+	background-color: #fff;
+    text-align: center;
+    padding: 1rem 3rem;
+}
+.services .box .content .img_box {
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    background: #000;
+    margin: 0 auto;
+    position: relative;
+	color: #fff;	
+}
+.services .box .content .img_box .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.services .box .content h1 {
+	font-size: 32px;
+	color: #333;
+}
+.services .box .content p {
+	font-size: 12px;
+	color: #979797;
+}
+.services .box .content.active {
+	background-color: #76c38f;
+}
+.services .box .content.active .img_box {
+	background: #fff;
+	color: #000;
+}
+.services .box .content.active h1,.services .box .content.active p {
+	color: #fff;
+}
+.services .box .content:hover {
+	background-color: #76c38f;
+}
+.services .box .content:hover .img_box {
+	background: #fff;
+	color: #000;
+}
+.services .box .content:hover h1,.services .box .content:hover p {
+	color: #fff;
+} */
+/******latest_work*****/
+.latest_work .title {
+	color: #fff;
+    font-size: 32px;
+    background: rgba(128,128,128,1);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Poiret One', cursive;
+}
+.latest_work {
+	padding-top: 55px;
+	position: relative;
+}
+.latest_work .box {
+	margin-bottom: 30px;
+}
+.latest_work .content {
+    text-align: center;
+    border: 5px solid #fff;
+}
+
+.latest_work .box.active .content {
+	/*border: 5px solid #9a82cc;*/	
+-webkit-box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+}
+
+.latest_work .box:hover .content {
+	/*border: 5px solid #9a82cc;*/	
+-webkit-box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+box-shadow: 3px 6px 48px -3px rgba(0,0,0,0.75);
+}
+
+.img_box_1 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/destination/Beach_of_Hawaii.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img_box_2 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/destination/Waimanalo_Beach.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img_box_3 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/home_page/texas_and_hawaii/IMG_2652.JPG);
+	background-size: cover;
+	background-position: center;
+}
+
+.img_box_4 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/home_page/family/_MG_3231.JPG);
+	background-size: cover;
+	background-position: center;
+}
+
+.img_box_5 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/destination/Kahala_Baech.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+.img_box_6 {
+    color: #fff;
+    height: 190px;
+    line-height: 190px;
+    
+    background: url(../imgs/home_page/family/11840597_10155911603875154_995133830_o.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+.latest_work .content .caption {
+    color: #555753;
+    background: #fff;
+    font-family: 'Kanit', sans-serif;
+    border: 1px solid #ccc;
+}
+
+.destination-header {
+	font-family: 'Poiret One', cursive;
+	margin-top: 3%;
+}
+
+.modal-dialog {
+	width: 50%;
+}
+
+
