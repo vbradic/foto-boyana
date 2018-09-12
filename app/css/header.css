@@ -429,6 +429,12 @@ hr.style-two {
     color: #ccc;
 }
 
+@media(max-width: 768px) {
+    #header #logo h3 {
+        font-size: 15px;
+    }
+}
+
 #header #logo h3 a:hover {
    
     color: #888a85;
@@ -656,3 +662,27 @@ body.mobile-nav-active #mobile-nav {
 	border-color: #ccc;
 }
 
+@media(max-width: 768px) {
+    #header #logo h3 {
+		font-size: 19px;
+		line-height: 1.2;
+	}
+	
+	.header-text-container  {
+		font-size: 14px;
+		margin-top: 10%;
+	}
+
+	#bg {
+		background-image: none !important;
+	}
+
+	.home-page-category-description {
+		font-size: 15px;
+	}
+
+	#header {
+		height: 85px;
+		padding-top: 15px;
+	}
+}

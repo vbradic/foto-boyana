@@ -99,7 +99,7 @@
 #search h5 { margin-top: 70px }
 
 
-.headline{	
+.headline {	
 	
 	/*text-decoration: underline;*/
 	margin-top: 5%;
@@ -124,7 +124,8 @@
 		-webkit-column-gap: 5px; /* Chrome, Safari, Opera */
 		-moz-column-gap: 5px; /* Firefox */
 		column-gap: 5px;
-	}
+  }
+  
 }
 
 /*
@@ -226,4 +227,10 @@
 
 .img-holder {
 	margin-bottom: 5px;
+}
+
+@media ( max-width : 768px) {
+  .headline {
+    font-size: 25px;
+  }
 }
